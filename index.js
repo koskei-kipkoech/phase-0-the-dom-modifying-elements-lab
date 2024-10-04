@@ -1,6 +1,14 @@
-// Write your code here!
-document.getElementById("main").remove();
-window.newHeader = document.createElement("h1");
-window.newHeader.id = "victory"
-window.newHeader.textContent ="Patrick is the champion"
-document.body.appendChild(window.newHeader);
+//remove main
+const elementRemove = document.getElementById('main')
+elementRemove.remove();
+
+//create h1
+const newHeader = document.createElement('h1')
+
+//set h1 a value 
+newHeader.id = 'victory'
+
+//add text
+newHeader.innerHTML = "Patrick is the champion"
+
+document.body.appendChild(newHeader)
